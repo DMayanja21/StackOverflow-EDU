@@ -2,9 +2,10 @@
   "name": "stackoverflow-edu",
   "version": "1.0.0",
   "description": "This project was aimed at developing a site with the following features:\r 1. Users can create an account and log in.\r 2. Users can post questions.\r 3. Users can delete the questions they post.\r 4. Users can post answers\r 5. Users can view the answers to questions.\r 6. User can accept a response out of all the responses to his/her question as the preferred answer.\r ______\r *Mayanja David 2019*",
-  "main": "index.js",
+    "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,6 @@
   },
   "homepage": "https://github.com/DMayanja21/StackOverflow-EDU#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "start":"node index.js"
+    "express": "^4.17.1"
   }
 }
