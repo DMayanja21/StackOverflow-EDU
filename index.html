@@ -4,9 +4,7 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./styles/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./styles/stack.css">
-    <script type="text/javascript" src="./scripts/stack.js"></script>
-    <script type="text/javascript" src="./scripts/jquery-3.4.1.js"></script>
-	<title>Homepage</title>
+    	<title>Homepage</title>
 </head>
 <body id="home">
     <div id="header" class="jumbotron jumbotron-fluid">
@@ -32,5 +30,23 @@
     		</p>
     	</div>
     </div>
-	<footer id="contact"> Contact Us: | Tel.+256 776095689 |  email: contactus@stack.org<hr> &copy Copyright Mayanja David 2019.</footer></body>
+	<footer id="contact"> Contact Us: | Tel.+256 776095689 |  email: contactus@stack.org<hr> &copy Copyright Mayanja David 2019.</footer>
+    <script type="text/javascript" src="./scripts/stack.js"></script>
+    <script type="text/javascript" src="./scripts/jquery-3.4.1.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script><!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+     <script>
+     // Your web app's Firebase configuration
+       var firebaseConfig = {
+        apiKey: "AIzaSyCgKVc4BbRnvVNk9AvzK3sC0QNlxqwTt1Y",
+        authDomain: "stackoverflow-edu-dm.firebaseapp.com",
+        databaseURL: "https://stackoverflow-edu-dm.firebaseio.com",
+        projectId: "stackoverflow-edu-dm",  storageBucket: "",
+        messagingSenderId: "275196329437",   appId: "1:275196329437:web:0066f5b486e617e3dc8a34"
+    };
+    // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
 </html>
