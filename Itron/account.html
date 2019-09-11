@@ -10,35 +10,21 @@
 </head>
 <body id="user">
 	<div id="header" class="jumbotron jumbotron-fluid">
-		<h1>StackOverflow-EDU</h1>
-		<nav class="navbar navbar-toggleable-md bg-faded navbar-inverse bg-primary">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#">Navbar</a>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#ask">Ask</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#review">History</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#replies">Feedback</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#similar">Alternatives</a>
-					</li>					
-				</ul>
-			</div>
-		</nav>
+		<h1>StackOverflow-EDU</h1>		
+		<nav class="navbar">
+		<a class="navbar-brand" href="#navbar"><strong>Navbar</strong></a><br>
+		<a class="nav-link" href="#ask">Ask</a>|
+		<a class="nav-link" href="#review">History</a>|
+		<a class="nav-link" href="#replies">Feedback</a>|
+		<a class="nav-link" href="#similar">Alternatives</a>
+	</nav>
 	</div>
+	
 	<div id="container">
 		<article id="input">
 			<section id="ask">
 				<h2>How may we help you?</h2>
-				<input type="textbox" name="question" placeholder="What is your issue?"><br>
+				<input type="textbox" class="form-textbox" name="question" placeholder="What is your issue?"><br>
 				<input type="button" name="forward" value="Submit">
 			</section>
 			<section id="review">
@@ -47,7 +33,8 @@
 					<li></li>
 					<li></li>
 				</ol>
-			</section>			
+			</section>
+			<div style="clear: both;"></div>			
 		</article>
 		<article id="feedback">
 			<section id="replies">
@@ -67,6 +54,6 @@
 			</section>
 		</article>
 	</div>
-	<footer id="contact"> Contact Us: | Tel.+256 776095689 |  email: contactus@itron.org<hr> &copy Copyright Mayanja David 2019.</footer>
+	<footer id="contact"> Contact Us: | Tel.+256 776095689 |  email: contactus@stack.org<hr> &copy Copyright Mayanja David 2019.</footer>
 </body>
 </html>
