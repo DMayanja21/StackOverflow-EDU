@@ -4,40 +4,75 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="styles/stack.css">
-        <script type="text/javascript" src="scripts/stack.js"></script>
-        <script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
         <title>Registration</title>
     </head>
     <body id="register">
     	<div>
     		<img src="images/Stack.png" alt="logo">
-    		<form id="signup" target="Homepage.html">
+    		<div id="signup" target="Homepage.html">
     			<label>
     				First Name<br>
-    				<input type="text" name="firstname" placeholder="Your first name..."><br>
+    				<input type="text" id="f_name" name="firstname" placeholder="Your first name..."><br>
     			</label>
     			<label>
     				Last Name<br>
-    				<input type="text" name="lastname" placeholder="Your last name..."><br>
+    				<input type="text" id="l_name" name="lastname" placeholder="Your last name..."><br>
     			</label>
     			<label>
     				Email Address<br>
-    				<input type="text" name="email" placeholder="Your email address..."><br>
+    				<input type="text" id="e_mail" name="email" placeholder="Your email address..."><br>
     			</label>
+                <label>
+                    User Name<br>
+                    <input type="text" id="u_name" name="username" placeholder="Your preferred user name..."><br>
+                </label>
     			<label>
     				New Password<br>
-    				<input type="text" name="nPass" placeholder="Your new password..."><br>
+    				<input type="password" id="n_pass" name="nPass" placeholder="Your new password..."><br>
     			</label>
     			<label>
     				Confirm Password<br>
-    				<input type="text" name="cPass" placeholder="Confirm your password..."><br>
+    				<input type="password" id="c_pass" name="cPass" placeholder="Confirm your password..."><br>
     			</label><br>
-                <input type="button" name="submit" value="Submit"><br>
+                <input type="button" id="signUpBtn" name="submit" value="Submit"><br>
                 <a href="/">
                     <input type="button" name="cancel" value="Cancel">
                 </a>
-    		</form>
+    		</div>
     	</div>
     	<footer id="contact"> Contact Us: | Tel.+256 776095689 |  email: contactus@stack.org<hr> &copy Copyright Mayanja David 2019.</footer>
+        <script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+        
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCgKVc4BbRnvVNk9AvzK3sC0QNlxqwTt1Y",
+    authDomain: "stackoverflow-edu-dm.firebaseapp.com",
+    databaseURL: "https://stackoverflow-edu-dm.firebaseio.com",
+    projectId: "stackoverflow-edu-dm",
+    storageBucket: "",
+    messagingSenderId: "275196329437",
+    appId: "1:275196329437:web:0066f5b486e617e3dc8a34"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script type="text/javascript" src="scripts/stack.js"></script>
     </body>
 </html>
