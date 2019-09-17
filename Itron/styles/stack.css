@@ -52,7 +52,7 @@ body {
 */
 
 input{
-	margin: 10px 0;
+	margin: 5% 2%;
 }
 /*
 article{
@@ -65,8 +65,8 @@ section{
 }
 */
 #signup{
-	margin: 50px 500px 50px 500px;
-	padding: 8% 5%;
+	margin: 5% 30%;
+	padding: 5% 10%;
 	border-style: solid;
 	border-color: black;
 	border-width: 3px;
